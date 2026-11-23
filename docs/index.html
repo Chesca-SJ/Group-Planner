@@ -3,6 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<link rel="canonical" href="https://chesca-sj.github.io/Group-Planner/">
 <meta name="theme-color" content="#f8f6ee">
 <meta name="description" content="Group Planner — a shared space for friends, plans, and savings goals.">
 <title>Group Planner</title>
@@ -16,7 +17,9 @@
 <noscript>Group Planner needs JavaScript. <a href="https://our-little-world-chesca.royal-mochi-7046.chatgpt.site">Open the planner directly</a>.</noscript>
 <script>
 const frame=document.getElementById('planner');
-frame.addEventListener('load',()=>document.getElementById('loading').remove(),{once:true});
+function syncInvite(){const code=new URLSearchParams(location.hash.slice(1)).get('join');const target='https://our-little-world-chesca.royal-mochi-7046.chatgpt.site'+(code?'#join='+encodeURIComponent(code):'');if(frame.getAttribute('src')!==target)frame.src=target;}
+syncInvite();window.addEventListener('hashchange',syncInvite);
+frame.addEventListener('load',()=>document.getElementById('loading')?.remove(),{once:true});
 </script>
 </body>
 </html>

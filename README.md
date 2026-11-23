@@ -4,7 +4,8 @@ Plan activities, track shared funds, and keep your circle organized.
 
 ## Open the website
 
-### [chesca-sj.github.io/Group-Planner](https://chesca-sj.github.io/Group-Planner/)
+### [chesca-sj.github.io/Group-Planner]([https://chesca-sj.github.io/Group-Planner/](https://chesca-sj.github.io/Group-Planner/
+))
 
 Create an account, then create a circle or join with an invitation code. Keep your recovery key somewhere safe so you can reset a forgotten password.
 

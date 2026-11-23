@@ -56,3 +56,11 @@ Password recovery uses an account recovery key. Automated email delivery is not 
 ## Copyright
 
 © 2026 Chesca SJ. All rights reserved.
+
+## GitHub Pages address
+
+The `docs/` folder provides a full-window embedded entry point. Enable it in repository **Settings → Pages → Deploy from a branch → main → /docs → Save**.
+
+After GitHub finishes publishing, the address will be `https://chesca-sj.github.io/Group-Planner/`.
+
+This page displays the existing hosted app in a frame. The backend and database remain on the existing hosting service; this is not a standalone static conversion. Keep that deployment active. Accounts use partitioned cookies, so sign in again when accessing the app through the GitHub Pages address. Browser restrictions on embedded content can affect sign-in or clipboard features; the direct hosted website remains available above.

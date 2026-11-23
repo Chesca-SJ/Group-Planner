@@ -1,0 +1,3 @@
+'use client';
+import {dateRange} from '../lib/date-filters';
+export default function DateFilter({period,onPeriod,anchor,onAnchor,label='Filter by date'}:any){const range=dateRange(period,anchor);return <div className="date-filter"><div className="tabs" aria-label={label}>{['All','Week','Month','Year'].map(p=><button type="button" key={p} aria-pressed={period===p} className={period===p?'selected':''} onClick={()=>onPeriod(p)}>{p==='All'?'All':'Per '+p}</button>)}</div>{period!=='All'&&<label>Choose a date<input type="date" value={anchor} required onChange={e=>{if(e.target.value)onAnchor(e.target.value)}}/></label>}{range&&<small>{range.start} – {range.end} · Asia/Manila</small>}</div>}
